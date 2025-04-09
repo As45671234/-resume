@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AS | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="toggle-theme" onclick="toggleTheme()">
+    <img id="theme-icon" src="img/icon2.png" alt="Тема" />
+  </button>
+
+  <div class="burger" onclick="toggleMobileNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav">
+    <a href="#about">About me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contacts">Contacts</a>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about">About me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contacts">Contacts</a>
+  </div>
+
+  <div class="hero">
+    <img src="img/me.jpg" alt="Фото профиля" class="profile">
+    <h1>ARNAT SULTANBEK</h1>
+    <p>WEB DEVELOPER • AITU STUDENT • CYBER ENTHUSIAST</p>
+  </div>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>Я — начинающий web-разработчик, увлечённый технологиями и созданием интерфейсов. Ищу стажировку, чтобы развиваться, учиться на практике и приносить пользу команде.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript (основы)</li>
+      <li>Python, Java</li>
+      <li>VS Code, Git</li>
+      <li>Языки: Казахский (родной), Русский (свободно), Английский (Intermediate)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/As45671234/Cantarella" target="_blank">Cantarella</a></li>
+      <li><a href="https://github.com/As45671234/MerimarM" target="_blank">MerimarM</a></li>
+      <li><a href="https://github.com/As45671234/3JUZ" target="_blank">3JUZ</a></li>
+    </ul>
+  </section>
+
+  <section id="contacts">
+    <h2>Contacts</h2>
+    <p>📍 Astana<br>
+    📧 arnatsultanbek2@gmail.com<br>
+    📱 +7 776 623 06 44<br>
+    💻 <a href="https://github.com/As45671234" target="_blank">GitHub: As45671234</a></p>
+  </section>
+  <script src="js.js"></script>
+</body>
+</html>
