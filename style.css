@@ -15,6 +15,34 @@ html {
     background: #f0f0f0;
     color: #111;
   }
+  .toggle-language {
+    position: fixed;
+    top: 70px; /* чуть ниже кнопки темы */
+    left: 20px;
+    z-index: 999;
+    background: rgba(162, 89, 255, 0.1);
+    border: 1px solid #a259ff;
+    border-radius: 6px;
+    padding: 6px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #a259ff;
+  }
+  .toggle-language:hover {
+    background: #a259ff;
+    color: #0b0011;
+    transform: scale(1.1);
+  }
+
+
   .toggle-theme {
     position: fixed;
     top: 20px;
