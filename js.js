@@ -13,3 +13,30 @@ window.addEventListener('DOMContentLoaded', () => {
     const nav = document.getElementById('mobileNav');
     nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
   }
+
+let currentLang = 'en'; // по умолчанию английский
+
+function toggleLanguage() {
+  currentLang = currentLang === 'en' ? 'ru' : 'en';
+  document.getElementById('lang-label').textContent = currentLang.toUpperCase();
+
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.style.display = el.dataset.lang === currentLang ? '' : 'none';
+  });
+
+  localStorage.setItem('lang', currentLang); // сохраняем выбор
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('lang');
+
+  if (savedLang) {
+    currentLang = savedLang;
+  }
+
+  // просто применяем, без переключения
+  document.getElementById('lang-label').textContent = currentLang.toUpperCase();
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.style.display = el.dataset.lang === currentLang ? '' : 'none';
+  });
+});
