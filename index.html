@@ -15,7 +15,6 @@
     <span id="lang-label">EN</span>
   </button>
 
-
   <div class="burger" onclick="toggleMobileNav()">
     <span></span>
     <span></span>
@@ -24,8 +23,8 @@
   <div class="nav">
     <a data-lang="en" href="#about">About me</a>
     <a data-lang="ru" style="display: none;" href="#about">Обо мне</a>
-    <a data-lang="en" href="#skills">Education</a>
-    <a data-lang="ru" style="display: none;" href="#skills">Образование</a>
+    <a data-lang="en" href="#education">Education</a>
+    <a data-lang="ru" style="display: none;" href="#education">Образование</a>
     <a data-lang="en" href="#skills">Skills</a>
     <a data-lang="ru" style="display: none;" href="#skills">Навыки</a>
     <a data-lang="en" href="#projects">Projects</a>
@@ -55,20 +54,17 @@
   <section id="about">
     <h2 data-lang="en">About me</h2>
     <h2 data-lang="ru" style="display: none;">Обо мне</h2>
-    <p data-lang="en">I am a junior web developer passionate about technology and UI creation. I'm looking for an internship to grow, learn in practice, and contribute to the team.</p>
-    <p data-lang="ru" style="display: none;">Я — начинающий web-разработчик, увлечённый технологиями и созданием интерфейсов. Ищу стажировку, чтобы развиваться, учиться на практике и приносить пользу команде.</p>
+    <p data-lang="en">Full-stack developer with practical experience in creating and deploying commercial web applications from scratch. Successfully implemented the Vaire Department marketplace project using the Next.js, TypeScript, Prisma, and PostgreSQL stack. Skilled in both coding and configuring server environments, including Nginx and PM2. Seeking an opportunity to apply my skills in an ambitious team to solve complex problems.</p>
+    <p data-lang="ru" style="display: none;">Фуллстек-разработчик с практическим опытом создания и развертывания коммерческих веб-приложений с нуля. Успешно реализовал проект маркетплейса Vaire Department, используя стек Next.js, TypeScript, Prisma и PostgreSQL. Умею не только писать код, но и настраивать серверное окружение, включая Nginx и PM2. Ищу возможность применить свои навыки в амбициозной команде для решения сложных задач.</p>
   </section>
-
   <section id="education">
     <h2 data-lang="en">Education</h2>
     <h2 data-lang="ru" style="display: none;">Образование</h2>
     <ul>
       <li data-lang="en">Bil Taraz – Boarding Lyceum (graduate)</li>
       <li data-lang="ru" style="display: none;">Bil Taraz – Лицей-интернат (выпускник)</li>
-
       <li data-lang="en">AITU – Astana IT University - 1st year, Computer Science</li>
       <li data-lang="ru" style="display: none;">AITU – Astana IT University - 1 курс, Computer Science</li>
-
       <li data-lang="en">Samsung Innovation Campus – Python and Big Data (certificate attached): <a href="img/Sumsung IC certificate.pdf" target="_blank">View Certificate</a></li>
       <li data-lang="ru" style="display: none;">Samsung Innovation Campus – курс Python и Big Data (сертификат прилагается): <a href="img/Sumsung IC certificate.pdf" target="_blank">Посмотреть сертификат</a></li>
     </ul>
@@ -77,19 +73,20 @@
   <section id="skills">
     <h2 data-lang="en">Skills</h2>
     <h2 data-lang="ru" style="display: none;">Навыки</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Python, Java</li>
-      <li>VS Code, Git</li>
-      <li data-lang="en">Languages: Kazakh (native), Russian (C1), English (B1)</li>
-      <li data-lang="ru" style="display: none;">Языки: казахский (родной), русский (C1), английский (B1)</li>
+    <ul class="skills-list">
+      <li><strong>Frontend:</strong> Next.js, React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Zod</li>
+      <li><strong>Backend:</strong> Node.js, Next.js (API Routes, Server Actions), JWT (jose), REST API</li>
+      <li><strong>Databases:</strong> PostgreSQL, Prisma ORM</li>
+      <li><strong>Tooling & DevOps:</strong> Git, GitHub, VPS, Nginx, PM2, Certbot (SSL), VS Code</li>
+      <li data-lang="en"><strong>Languages:</strong> Kazakh (native), Russian (C1), English (B1)</li>
+      <li data-lang="ru" style="display: none;"><strong>Языки:</strong> Казахский (родной), Русский (C1), Английский (B1)</li>
     </ul>
   </section>
-
   <section id="projects">
     <h2 data-lang="en">Projects</h2>
     <h2 data-lang="ru" style="display: none;">Проекты</h2>
     <ul>
+      <li><a href="https://vairegroup.kz/" target="_blank">Vaire Group</a></li>
       <li><a href="https://as45671234.github.io/Mobile-Tau/" target="_blank">Mobile-Tau</a></li>
       <li><a href="https://github.com/As45671234/Cantarella" target="_blank">Cantarella</a></li>
       <li><a href="https://github.com/As45671234/3JUZ" target="_blank">3JUZ</a></li>
