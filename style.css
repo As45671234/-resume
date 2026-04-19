@@ -435,6 +435,13 @@ section {
   margin-bottom: 0.5rem;
 }
 
+.portfolio-meta {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  min-height: 3.1em;
+}
+
 .btn-link {
   color: var(--accent-color);
   font-weight: 600;
